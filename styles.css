@@ -15,6 +15,10 @@ header {
 header img {
   width: 150px;
   height: auto;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+  mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
 }
 
 nav a {
@@ -66,6 +70,9 @@ nav a {
 }
 
 .image-placeholder {
+    background-image: url(keycard.jpg);
+    background-size: cover;
+    background-position: center;
   width: 600px;
   height: 350px;
   background-color: #555;
