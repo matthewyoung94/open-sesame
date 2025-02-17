@@ -103,6 +103,11 @@ nav a {
   border-left: 4px solid #796eff;
   background-color: #f4f2ff;
 }
+
+.tab:hover {
+  background-color: #f0f0f0;
+}
+
 /* facts */
 .facts-section {
   text-align: center;

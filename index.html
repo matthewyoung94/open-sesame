@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <title>Open Sesame</title>
+    <link rel="icon" type="image/png" href="open-sesame.png">
   </head>
   <body>
     <!-- nav bar and logo -->
@@ -39,12 +40,12 @@
       <div class="image-placeholder" role="img" aria-label="">Image Placeholder</div>
       <p>Some text about this image</p>
       <div class="tabs">
-        <div class="tab">
+        <div class="tab" data-image="keycard.jpg">
           <strong>First tab title</strong><br />First tab text
         </div>
-        <div class="tab">Second tab title<br />Second tab text</div>
-        <div class="tab">Third tab title<br />Third tab text</div>
-        <div class="tab">Fourth tab title<br />Fourth tab text</div>
+        <div class="tab" data-image="keycard.jpg">Second tab title<br />Second tab text</div>
+        <div class="tab" data-image="keycard.jpg">Third tab title<br />Third tab text</div>
+        <div class="tab" data-image="keycard.jpg">Fourth tab title<br />Fourth tab text</div>
       </div>
     </div>
 
@@ -116,6 +117,9 @@
       <p class="footer-bottom">
         © Helder Balbino & Matthew Young 2024 • All rights reserved
       </p>
+    
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
