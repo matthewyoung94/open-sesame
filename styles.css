@@ -3,12 +3,12 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-  background-color: #f8f8f8;
+  background-color: #FBFAFE;
 }
 /* header styles */
 header {
   padding: 20px;
-  background-color: #fff;
+  background-color: #f6f3fc;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -29,11 +29,11 @@ nav a {
 
 .hero h1 {
   font-size: 2em;
-  color: #333;
+  color: #35414b;
 }
 
 .hero p {
-  color: gray;
+  color: #4e5a65;
 }
 
 .image-placeholder {
@@ -93,7 +93,7 @@ nav a {
 }
 
 .tab:first-child {
-  border-left: 4px solid purple;
+  border-left: 4px solid #796eff;
   background-color: #f4f2ff;
 }
 /* facts */
