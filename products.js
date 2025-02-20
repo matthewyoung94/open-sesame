@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const productList = document.getElementById('product-list')
     const searchInput = document.getElementById('search')
     const loadMoreBtn = document.getElementById('load-more')
+    const resultsInfo = document.getElementById('results-info') // Get the results info section
 
     let products = [
         {
@@ -65,6 +66,9 @@ document.addEventListener('DOMContentLoaded', function () {
             `
             productList.appendChild(productCard)
         })
+
+        // Update the number of products found
+        resultsInfo.innerHTML = `<p><em>${productsArray.length} product(s) found</em></p>`
 
         // Add event listeners to stars
         document
