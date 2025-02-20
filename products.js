@@ -9,37 +9,42 @@ document.addEventListener('DOMContentLoaded', function () {
             description: 'Ac tortor vitae purus faucibus.',
             price: '£6.99',
             rating: 4,
-            Image: 'images/open-sesame.png',
+            image: 'images/open-sesame.png',
         },
         {
             title: 'Product 2',
             description: 'Ac tortor vitae purus faucibus.',
             price: '£6.99',
             rating: 4,
+            image: 'images/open-sesame.png',
         },
         {
             title: 'Product 3',
             description: 'Ac tortor vitae purus faucibus.',
             price: '£6.99',
             rating: 5,
+            image: 'images/open-sesame.png',
         },
         {
             title: 'Product 4',
             description: 'Ac tortor vitae purus faucibus.',
             price: '£6.99',
             rating: 4,
+            image: 'images/open-sesame.png',
         },
         {
             title: 'Product 5',
             description: 'Ac tortor vitae purus faucibus.',
             price: '£6.99',
             rating: 4,
+            image: 'images/open-sesame.png',
         },
         {
             title: 'Product 6',
             description: 'Ac tortor vitae purus faucibus.',
             price: '£6.99',
             rating: 5,
+            image: 'images/open-sesame.png',
         },
     ]
 
@@ -114,18 +119,21 @@ document.addEventListener('DOMContentLoaded', function () {
                 description: 'New product',
                 price: '£7.99',
                 rating: 4,
+                image: 'images/open-sesame.png',
             },
             {
                 title: 'Product 8',
                 description: 'Another product',
                 price: '£8.99',
                 rating: 3,
+                image: 'images/open-sesame.png',
             },
             {
                 title: 'Product 9',
                 description: 'Yet another one',
                 price: '£9.99',
                 rating: 5,
+                image: 'images/open-sesame.png',
             },
         ]
         products = [...products, ...moreProducts]
