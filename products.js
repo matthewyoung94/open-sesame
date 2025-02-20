@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function renderProducts(productsArray) {
         productList.innerHTML = '' // Clear existing products
-        productsArray.forEach((product) => {
+        productsArray.forEach((product, index) => {
             const productCard = document.createElement('div')
             productCard.classList.add('product-card')
 
@@ -52,13 +52,45 @@ document.addEventListener('DOMContentLoaded', function () {
                 <img src="https://via.placeholder.com/250" alt="Product Image">
                 <p class="product-title">${product.title}</p>
                 <p class="product-description">${product.description}</p>
-                <p class="product-rating">${'★'.repeat(
-                    product.rating
-                )}${'☆'.repeat(5 - product.rating)}</p>
+                <div class="product-rating" data-index="${index}">
+                    ${generateStarRating(product.rating)}
+                </div>
                 <p class="product-price">${product.price}</p>
             `
             productList.appendChild(productCard)
         })
+
+        // Add event listeners to stars
+        document
+            .querySelectorAll('.product-rating')
+            .forEach((ratingElement) => {
+                ratingElement.addEventListener('click', function (event) {
+                    if (event.target.classList.contains('star')) {
+                        const productIndex =
+                            event.currentTarget.getAttribute('data-index')
+                        const newRating = parseInt(
+                            event.target.getAttribute('data-value')
+                        )
+
+                        // Update product rating
+                        products[productIndex].rating = newRating
+                        renderProducts(products) // Re-render the products to reflect the new rating
+                    }
+                })
+            })
+    }
+
+    // Function to generate stars dynamically
+    function generateStarRating(rating) {
+        let starsHTML = ''
+        for (let i = 1; i <= 5; i++) {
+            if (i <= rating) {
+                starsHTML += `<span class="star filled" data-value="${i}">★</span>`
+            } else {
+                starsHTML += `<span class="star" data-value="${i}">☆</span>`
+            }
+        }
+        return starsHTML
     }
 
     // Initial render
