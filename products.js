@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
             description: 'Ac tortor vitae purus faucibus.',
             price: '£6.99',
             rating: 4,
+            Image: 'https://via.placeholder.com/150',
         },
         {
             title: 'Product 2',
@@ -49,6 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
             productCard.classList.add('product-card')
 
             productCard.innerHTML = `
+                <img src="${product.image}" alt="${product.title}">
                 <p class="product-title">${product.title}</p>
                 <p class="product-description">${product.description}</p>
                 <div class="product-rating" data-index="${index}">
