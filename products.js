@@ -49,7 +49,6 @@ document.addEventListener('DOMContentLoaded', function () {
             productCard.classList.add('product-card')
 
             productCard.innerHTML = `
-                <img src="https://via.placeholder.com/250" alt="Product Image">
                 <p class="product-title">${product.title}</p>
                 <p class="product-description">${product.description}</p>
                 <div class="product-rating" data-index="${index}">
