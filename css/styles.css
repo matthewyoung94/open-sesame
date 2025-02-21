@@ -101,7 +101,7 @@ nav a {
 }
 
 .image-placeholder {
-  background-image: url(/images/keycard.jpg);
+  background-image: url(../images/keycard.jpg);
   background-size: cover;
   background-position: center;
   width: 600px;
