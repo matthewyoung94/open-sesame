@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
             tabs.forEach(t => t.classList.remove("active-tab"));
             this.classList.add("active-tab");
 
-            if (newImage) {
+            if (newImage && newImage.trim() !== "") {
                 imagePlaceholder.style.backgroundImage = `url('${newImage}')`;
                 imagePlaceholder.style.backgroundSize = "cover";
                 imagePlaceholder.style.backgroundPosition = "center";
