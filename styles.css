@@ -15,6 +15,10 @@ header {
 header img {
   width: 150px;
   height: auto;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+  mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
 }
 
 nav a {
@@ -63,9 +67,13 @@ nav a {
 .image-section {
   text-align: center;
   margin: 40px auto;
+  background-color: #f9f7ff;
 }
 
 .image-placeholder {
+    background-image: url(keycard.jpg);
+    background-size: cover;
+    background-position: center;
   width: 600px;
   height: 350px;
   background-color: #555;
@@ -96,6 +104,11 @@ nav a {
   border-left: 4px solid #796eff;
   background-color: #f4f2ff;
 }
+
+.tab:hover {
+  background-color: #f0f0f0;
+}
+
 /* facts */
 .facts-section {
   text-align: center;
