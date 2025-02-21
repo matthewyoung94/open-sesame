@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const imagePlaceholder = document.querySelector(".image-placeholder");
+    const imageSection = document.querySelector(".image-section");
+    const imagePlaceholder = imageSection.querySelector(".image-placeholder");
     const tabs = document.querySelectorAll(".tab");
 
     tabs.forEach(tab => {
