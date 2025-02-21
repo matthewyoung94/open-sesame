@@ -1,58 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="productStyles.css" />
-		<link rel="stylesheet" href="styles.css" />
-		<title>Open Sesame</title>
-	</head>
-	<body>
-		<!-- nav bar and logo -->
-		<header>
-			<img src="open-sesame.png" />
-			<nav>
-				<a href="index.html">Home</a>
-				<a href="products.html">Products</a>
-				<a href="about.html">About</a>
-			</nav>
-		</header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="productStyles.css" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Open Sesame</title>
+    </head>
+    <body>
+        <!-- nav bar and logo -->
+        <header>
+            <img src="images/open-sesame.png" />
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="about.html">About</a>
+            </nav>
+        </header>
 
-		<section>
-			<h1>Find the product you're looking for</h1>
-			<input type="text" id="search" placeholder="Search products" />
-		</section>
+        <section>
+            <h1>Find the product you're looking for</h1>
+            <input type="text" id="search" placeholder="Search products" />
+        </section>
 
-		<section id="results-info">
-			<p><em>6 products found</em></p>
-		</section>
+        <section id="results-info">
+            <p><em></em></p>
+        </section>
 
-		<main id="product-list" class="grid-container">
-			<!-- Product Cards will be inserted dynamically -->
-		</main>
+        <main id="product-list" class="grid-container">
+            <!-- Product Cards will be inserted dynamically -->
+        </main>
 
-		<button id="load-more">Show more</button>
+        <button id="load-more">Show more</button>
 
-		<script src="script.js"></script>
+        <script src="script.js"></script>
+        <script src="products.js"></script>
 
-		<!-- footer -->
-		<footer>
-			<div class="footer-content">
-				<div class="footer-column">
-					<h3>Company</h3>
-					<p>About Us</p>
-					<p>Contact Us</p>
-				</div>
-				<div class="footer-column">
-					<h3>Legal</h3>
-					<p>Cookies Policy</p>
-					<p>Privacy Policy</p>
-					<p>Terms of Service</p>
-				</div>
-			</div>
-			<p class="footer-bottom">
-				© Helder Balbino & Matthew Young 2024 • All rights reserved
-			</p>
-		</footer>
-	</body>
+        <!-- footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <p>About Us</p>
+                    <p>Contact Us</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <p>Cookies Policy</p>
+                    <p>Privacy Policy</p>
+                    <p>Terms of Service</p>
+                </div>
+            </div>
+            <p class="footer-bottom">
+                © Helder Balbino & Matthew Young 2024 • All rights reserved
+            </p>
+        </footer>
+    </body>
 </html>
