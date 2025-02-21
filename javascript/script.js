@@ -5,7 +5,15 @@ document.addEventListener("DOMContentLoaded", function () {
     tabs.forEach(tab => {
         tab.addEventListener("click", function () {
             const newImage = this.getAttribute("data-image");
-            imagePlaceholder.style.backgroundImage = `url(${newImage})`;
+
+            tabs.forEach(t => t.classList.remove("active-tab"));
+            this.classList.add("active-tab");
+
+            if (newImage) {
+                imagePlaceholder.style.backgroundImage = `url('${newImage}')`;
+                imagePlaceholder.style.backgroundSize = "cover";
+                imagePlaceholder.style.backgroundPosition = "center";
+            }
         });
     });
 });
